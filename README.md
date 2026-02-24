@@ -46,16 +46,3 @@ Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing)
    ```
 
 Atau buka file `Proyek_Analisis_Data_Nabiel.ipynb` di Jupyter Notebook untuk melihat proses analisis dari awal sampai akhir.
-
-## Author
-
-**Nabiel Alfallah Herdiana**  
-Email: nabielah41@gmail.com  
-Dicoding ID: nabielherdiana
-
----
-
-Terima kasih sudah mampir ke repo ini!
-```
-
----
