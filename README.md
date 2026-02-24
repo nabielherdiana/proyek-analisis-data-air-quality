@@ -1,9 +1,5 @@
 # Proyek Analisis Data: Air Quality Dataset
 
-**Nama:** Nabiel Alfallah Herdiana  
-**Email:** nabielah41@gmail.com  
-**ID Dicoding:** nabielherdiana
-
 Proyek ini adalah submission akhir untuk kelas **Belajar Fundamental Analisis Data dengan Python** di Dicoding.
 
 Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing) periode Maret 2013 – Februari 2017. Dataset ini berisi data per jam yang mencakup berbagai polutan udara dan variabel meteorologi.
@@ -46,3 +42,4 @@ Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing)
    ```
 
 Atau buka file `Proyek_Analisis_Data_Nabiel.ipynb` di Jupyter Notebook untuk melihat proses analisis dari awal sampai akhir.
+
