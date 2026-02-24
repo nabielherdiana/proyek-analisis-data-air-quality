@@ -8,7 +8,7 @@ st.set_page_config(page_title="Air Quality Dashboard", layout="wide")
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/data/PRSA_Data_Aotizhongxin_20130301-20170228.csv")
+    df = pd.read_csv("data/PRSA_Data_Aotizhongxin_20130301-20170228.csv")
     df['datetime'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
     df['PM2.5'] = df['PM2.5'].interpolate(method='linear', limit_direction='both')
     return df
