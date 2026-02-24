@@ -8,18 +8,25 @@ st.set_page_config(page_title="Air Quality Insights", page_icon="🌬️", layou
 # --- CUSTOM CSS  ---
 st.markdown("""
     <style>
-    .main {
-        background-color: #f8f9fa;
+    /* Mengatur background utama */
+    .stApp {
+        background-color: #F0F2F6;
     }
-    h1, h2, h3 {
-        color: #2c3e50;
-        font-family: 'Helvetica Neue', sans-serif;
-    }
-    .stMetric {
+    
+    /* Modifikasi kotak Metric */
+    [data-testid="stMetric"] {
         background-color: #ffffff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Paksa teks di dalam kotak jadi gelap biar nggak ngilang di Dark Mode */
+    [data-testid="stMetricValue"] {
+        color: #1F2937 !important;
+    }
+    [data-testid="stMetricLabel"] {
+        color: #4B5563 !important;
     }
     </style>
 """, unsafe_allow_html=True)
