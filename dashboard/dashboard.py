@@ -59,7 +59,8 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # --- VISUALIZATION LAYER ---
 st.subheader("📈 Tren Tingkat PM2.5 Bulanan")
-main_df_monthly = main_df.set_index('datetime').resample('M').mean(numeric_only=True).reset_index()
+# Fix Warning Pandas: Mengganti 'M' menjadi 'ME'
+main_df_monthly = main_df.set_index('datetime').resample('ME').mean(numeric_only=True).reset_index()
 
 # Plotly Line Chart
 fig_pm = px.line(
@@ -71,7 +72,9 @@ fig_pm = px.line(
     color_discrete_sequence=['#E74C3C']
 )
 fig_pm.update_layout(xaxis_title="Waktu", yaxis_title="Konsentrasi PM2.5")
-st.plotly_chart(fig_pm, use_container_width=True, theme="streamlit")
+
+# Fix Warning Streamlit: Mengganti use_container_width=True menjadi width='stretch'
+st.plotly_chart(fig_pm, width='stretch', theme="streamlit")
 
 st.divider()
 
@@ -86,7 +89,9 @@ fig_corr = px.scatter(
     color_continuous_scale='Tealrose'
 )
 fig_corr.update_layout(xaxis_title="Suhu Udara (°C)", yaxis_title="Konsentrasi Ozon (O3)")
-st.plotly_chart(fig_corr, use_container_width=True, theme="streamlit")
+
+# Fix Warning Streamlit: Mengganti use_container_width=True menjadi width='stretch'
+st.plotly_chart(fig_corr, width='stretch', theme="streamlit")
 
 # Footer
 st.caption("Dibuat menggunakan Streamlit & Plotly | © 2026")
