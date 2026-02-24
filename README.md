@@ -1,17 +1,61 @@
-# ☁️ Air Quality Data Analysis Dashboard
+# Proyek Analisis Data: Air Quality Dataset
 
-Ini adalah proyek akhir dari kelas Belajar Fundamental Analisis Data di Dicoding. Proyek ini menganalisis dataset Air Quality (stasiun Aotizhongxin) dan menampilkan hasilnya dalam bentuk *dashboard* interaktif menggunakan Streamlit.
+**Nama:** Nabiel Alfallah Herdiana  
+**Email:** nabielah41@gmail.com  
+**ID Dicoding:** nabielherdiana
 
-## Cara Menjalankan Dashboard secara Lokal
+Proyek ini adalah submission akhir untuk kelas **Belajar Fundamental Analisis Data dengan Python** di Dicoding.
 
-### 1. Setup Environment
-Sebaiknya gunakan *virtual environment* agar *library* tidak bentrok.
-```bash
-# Membuat virtual environment (opsional tapi disarankan)
-python -m venv env
+Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing) periode Maret 2013 – Februari 2017. Dataset ini berisi data per jam yang mencakup berbagai polutan udara dan variabel meteorologi.
 
-# Mengaktifkan virtual environment (Windows)
-env\Scripts\activate
+## Pertanyaan Bisnis
 
-# Mengaktifkan virtual environment (Mac/Linux)
-source env/bin/activate
+1. Bagaimana tren tingkat polusi PM2.5 di stasiun Aotizhongxin selama periode 2013–2017?
+2. Apakah terdapat korelasi antara suhu udara (TEMP) dengan konsentrasi ozon (O3)?
+
+## Insight Utama
+
+- Konsentrasi PM2.5 cukup fluktuatif dan menunjukkan pola musiman yang jelas. Polusi cenderung jauh lebih rendah pada musim panas dibandingkan musim dingin.
+- Terdapat korelasi positif sedang antara suhu udara dengan kadar O3. Suhu yang lebih tinggi cenderung meningkatkan pembentukan ozon di atmosfer.
+- Rata-rata PM2.5 selama periode pengamatan adalah **82.54 µg/m³**, yang masih berada di kategori kualitas udara tidak sehat.
+
+## Teknologi yang Digunakan
+
+- Python
+- Pandas (data wrangling & analisis)
+- Matplotlib & Seaborn (visualisasi)
+- Jupyter Notebook
+- Streamlit (dashboard interaktif)
+
+## Cara Menjalankan
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/nabielherdiana/proyek-analisis-data-air-quality.git
+   cd proyek-analisis-data-air-quality
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Jalankan dashboard:
+   ```bash
+   streamlit run dashboard.py
+   ```
+
+Atau buka file `Proyek_Analisis_Data_Nabiel.ipynb` di Jupyter Notebook untuk melihat proses analisis dari awal sampai akhir.
+
+## Author
+
+**Nabiel Alfallah Herdiana**  
+Email: nabielah41@gmail.com  
+Dicoding ID: nabielherdiana
+
+---
+
+Terima kasih sudah mampir ke repo ini!
+```
+
+---
