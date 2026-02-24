@@ -11,9 +11,9 @@ Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing)
 
 ## Insight Utama
 
-- Konsentrasi PM2.5 cukup fluktuatif dan menunjukkan pola musiman yang jelas. Polusi cenderung jauh lebih rendah pada musim panas dibandingkan musim dingin.
-- Terdapat korelasi positif sedang antara suhu udara dengan kadar O3. Suhu yang lebih tinggi cenderung meningkatkan pembentukan ozon di atmosfer.
-- Rata-rata PM2.5 selama periode pengamatan adalah **82.54 µg/m³**, yang masih berada di kategori kualitas udara tidak sehat.
+- Konsentrasi PM2.5 sangat fluktuatif dan memiliki pola musiman. Polusi cenderung memburuk pada periode akhir dan awal tahun (musim dingin), lalu membaik di pertengahan tahun.
+- Terdapat korelasi positif yang signifikan antara suhu udara dengan kadar O3. Cuaca panas (>25°C) memicu lonjakan pembentukan gas ozon di atmosfer secara drastis.
+- Rata-rata PM2.5 selama periode pengamatan berada di angka **82.54 µg/m³**, yang masuk dalam kategori kualitas udara tidak sehat.
 
 ## Teknologi yang Digunakan
 
@@ -42,6 +42,3 @@ Saya menganalisis dataset kualitas udara dari stasiun **Aotizhongxin** (Beijing)
    ```
 
 Atau buka file `Proyek_Analisis_Data_Nabiel.ipynb` di Jupyter Notebook untuk melihat proses analisis dari awal sampai akhir.
-
-
-perbaiki readme ku
