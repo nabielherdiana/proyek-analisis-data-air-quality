@@ -22,9 +22,6 @@ with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/3313/3313888.png", width=100)
     st.title("Air Quality: Aotizhongxin")
     st.markdown("Cek kualitas udara dan korelasinya dengan cuaca di sini.")
-    
-    # Kasih petunjuk buat audiens cara ganti tema
-    st.info("💡 **Tip:** Ganti ke Mode Siang/Malam di pojok kanan atas web (⋮) ➔ Settings ➔ Theme.")
     st.divider()
     
     min_date = df['datetime'].min().date()
@@ -46,7 +43,7 @@ st.title("🌬️ Air Quality Insights Dashboard")
 st.markdown("**Proyek Analisis Data | Nabiel Alfallah Herdiana**")
 st.divider()
 
-# --- METRICS LAYER (Pakai Container Bawaan Streamlit biar rapi di Dark/Light Mode) ---
+# --- METRICS LAYER ---
 col1, col2, col3 = st.columns(3)
 with col1:
     with st.container(border=True):
@@ -74,12 +71,9 @@ fig_pm = px.line(
     color_discrete_sequence=['#E74C3C']
 )
 fig_pm.update_layout(xaxis_title="Waktu", yaxis_title="Konsentrasi PM2.5")
-# theme="streamlit" bikin grafik otomatis nge-blend sama Dark/Light mode
 st.plotly_chart(fig_pm, use_container_width=True, theme="streamlit")
 
-
 st.divider()
-
 
 st.subheader("🔥 Suhu Udara vs 💨 Ozon (O3)")
 # Plotly Scatter Chart
