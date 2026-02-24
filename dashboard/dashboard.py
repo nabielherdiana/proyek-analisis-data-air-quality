@@ -73,8 +73,7 @@ fig_pm = px.line(
 )
 fig_pm.update_layout(xaxis_title="Waktu", yaxis_title="Konsentrasi PM2.5")
 
-# Fix Warning Streamlit: Mengganti use_container_width=True menjadi width='stretch'
-st.plotly_chart(fig_pm, use_container_width=True)
+st.plotly_chart(fig_pm, width='stretch', theme="streamlit")
 
 st.divider()
 
@@ -90,8 +89,7 @@ fig_corr = px.scatter(
 )
 fig_corr.update_layout(xaxis_title="Suhu Udara (°C)", yaxis_title="Konsentrasi Ozon (O3)")
 
-# Fix Warning Streamlit: Mengganti use_container_width=True menjadi width='stretch'
-st.plotly_chart(fig_corr, use_container_width=True)
+st.plotly_chart(fig_corr, width='stretch', theme="streamlit")
 
 # Footer
 st.caption("Dibuat menggunakan Streamlit & Plotly | © 2026")
